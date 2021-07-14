@@ -1,0 +1,89 @@
+*{
+    font-family: 'Shippori Mincho', serif;
+    box-sizing: border-box;
+    position: relative;
+    color: #777676;
+    vertical-align: top;
+    /* outline: solid 1px rgb(143, 131, 131); */
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1566041510394-cf7c8fe21800?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80);
+}
+    
+.container{
+    max-width: 800px;
+    width: 800px;
+    margin: 20px 20px;
+    border: solid 1px rgb(206, 206, 206);
+    border-radius: 3px;
+    background-color: rgba(248, 248, 248, 0.822);
+    box-shadow: 2px 2px 10px 4px rgb(0 0 0 / 20%);
+}
+.container h2{
+    border: solid 3px rgb(238, 232, 225);
+    border-radius: 3px;
+    opacity: 0.8;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.pic{
+    width: 180px;
+    height: 180px;
+    background-image: url('118510571_829458564263469_8070001175259318619_n.jpg'); 
+    background-size: 110%;
+    background-position: bottom left;
+    margin: 30px;
+    border-radius: 10px;
+   
+}
+
+.English-name{
+    max-width: 100%;
+    font-size: 55px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: -50px;
+    padding-bottom: 5px;
+    line-height: 1;   
+}
+
+hr{
+    width: 90px;
+    height: 5px;
+    background-color: #777676;
+}
+
+
+.section{
+    display: flex;
+    justify-content: center;    
+}
+
+.section>.box{
+    max-width: 50%;
+    width: 50%;
+    margin: 10px;
+}
+
+.section h3{
+    font-size: 20px;
+}
+
+.about-me p{
+  line-height: 2;  
+}
+
+.personal-data>ul>li,.section h3, .section p{
+    padding: 5px 50px;
+}
+
+
+  
