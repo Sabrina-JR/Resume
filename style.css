@@ -9,7 +9,6 @@
 
 html,body{
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     background-image: url(https://images.unsplash.com/photo-1566041510394-cf7c8fe21800?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80);
@@ -50,9 +49,7 @@ html,body{
     font-size: 55px;
     font-weight: 900;
     text-align: center;
-    margin-top: -50px;
-    padding-bottom: 5px;
-    line-height: 1;   
+    margin-top: -30px;
 }
 
 hr{
@@ -67,23 +64,96 @@ hr{
     justify-content: center;    
 }
 
-.section>.box{
+.section>.box,.skill>.box,.work-experience>.box{
     max-width: 50%;
     width: 50%;
     margin: 10px;
 }
 
-.section h3{
+
+.section h3, .skill h3{
     font-size: 20px;
+    padding: 5px 0px;
 }
 
-.about-me p{
-  line-height: 2;  
+.about-me p,.skill p{
+   line-height: 2;
 }
 
-.personal-data>ul>li,.section h3, .section p{
+.personal-data>ul>li{
+   margin: 5px 0px;
+}
+
+.personal-data>ul>li,.section h3, .section p,.skill>
+.ski>h3,.skill>.ski>p,.footer>.foo
+{
     padding: 5px 50px;
 }
+
+.work-experience>.box>p,.work-experience>.box>h4{
+    padding: 8px 50px;
+}
+
+.skill>.ski>p{
+    font-size: 15px;
+}
+
+.skill>.ski>ul>li,.skill h4{
+    padding: 13px 50px;
+}
+
+.skill h4,.footer>.foo{
+    font-size: 18px;
+}
+
+.skill{
+    display: flex;
+}
+
+.work-experience{
+    display: flex;
+}
+
+
+@media screen and (max-width:780px){
+    .section,.article{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .personal-data>ul>li,.section h3, .section p,.skill>
+    .ski>h3,.skill>.ski>p,.footer>.foo
+    {
+        padding: 5px 10px;
+    }
+    
+    .skill,.footer>.work-experience{
+        padding: 5px 10px;
+    }
+
+    .work-experience>.box>p,.work-experience>.box>h4{
+        padding: 8px 0px;
+    }
+
+    .skill>.ski>ul>li,.skill h4{
+        padding: 13px 10px;
+    }
+
+    .section>.box,.skill>.box,.work-experience>.box{
+        max-width: 100%;
+        width: 100%;
+    }
+   
+}
+
+@media screen and (max-width:600px){
+    .skill,.footer>.work-experience{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
 
 
   
